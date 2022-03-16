@@ -6,16 +6,16 @@ function formatDate(date) {
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
-  } 
+  }
   let dayIndex = date.getDay();
-  let days = [ 
+  let days = [
     "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday"
+    "Saturday",
   ];
   let day = days[dayIndex];
   return `${day} ${hours}:${minutes}`;
